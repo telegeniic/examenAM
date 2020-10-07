@@ -53,10 +53,11 @@
     <div class="row">
       <div class="col-sm-3 mx-auto">
         <div class="card">
+          <!--Tarjeta para el clima actual-->
           <div class="card-body text-center">
             <h5 class="card-title">Clima Actual</h5>
             <p class="card-text">Actualmente estamos a una temperatura de:</p>
-            <h2>35C</h2>
+            <h2 id="lblActual">35C</h2>
           </div>
         </div>
       </div>
@@ -64,22 +65,26 @@
     <div class="row">
       <div class="col-sm-3 mx-auto">
         <div class="card">
+          <!--Tarjeta para la temperatura minima-->
           <div class="card-body text-center">
             <h5 class="card-title">Temperatura Minima</h5>
             <p class="card-text">El dia de hoy se estima una minima de:</p>
-            <h2>10C</h2>
+            <h2 id="lblMinima">10C</h2>
           </div>
         </div>
       </div>
       <div class="col-sm-3 mx-auto">
         <div class="card">
+          <!--Tarjeta para la temperatura maxima-->
           <div class="card-body text-center">
             <h5 class="card-title">Temperatura Maxima</h5>
             <p class="card-text">El dia de hoy se estima una maxima de:</p>
-            <h2>50C</h2>
+            <h2 id="lblMaxima">50C</h2>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="apiweathercall.js"></script>
+  <script src="dataViewer.js"></script>
 </html>
