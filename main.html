@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <title>El CLima Al Momento</title>
+  </head>
+  <body>
+    <!--Aqui empieza el jumbotron-->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Busque el Clima</h1>
+        <p class="lead">
+          En esta pagina usted podra buscar el clima de su ciudad, en un
+          momento, solo tiene que poner la siguiente informacion:
+        </p>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nombre de la Ciudad"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+            id="txtCiudad"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="btnBuscar"
+            >
+              Buscar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Aqui termina el jumbotron-->
+    <!--Aqui empiezan las columnas Con los climas-->
+    <div class="row">
+      <div class="col-sm-3 mx-auto">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Clima Actual</h5>
+            <p class="card-text">Actualmente estamos a una temperatura de:</p>
+            <h2>35C</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 mx-auto">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Temperatura Minima</h5>
+            <p class="card-text">El dia de hoy se estima una minima de:</p>
+            <h2>10C</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 mx-auto">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Temperatura Maxima</h5>
+            <p class="card-text">El dia de hoy se estima una maxima de:</p>
+            <h2>50C</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
