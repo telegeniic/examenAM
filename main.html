@@ -20,7 +20,7 @@
   </head>
   <body>
     <!--Aqui empieza el jumbotron-->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron">
       <div class="container">
         <h1 class="display-4">Busque el Clima</h1>
         <p class="lead">
@@ -50,36 +50,47 @@
     </div>
     <!--Aqui termina el jumbotron-->
     <!--Aqui empiezan las columnas Con los climas-->
-    <div class="row">
-      <div class="col-sm-3 mx-auto">
-        <div class="card">
+    <div id="showWeather" style="display: none">
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <div class="jumbotron">
+            <div class="container">
+              <h1 class="display" id="cityName">Fluid jumbotron</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 mx-auto">
           <!--Tarjeta para el clima actual-->
-          <div class="card-body text-center">
-            <h5 class="card-title">Clima Actual</h5>
-            <p class="card-text">Actualmente estamos a una temperatura de:</p>
-            <h2 id="lblActual">35C</h2>
+          <div class="card text-white bg-success">
+            <div class="card-body text-center">
+              <h5 class="card-title">Clima Actual</h5>
+              <p class="card-text">Actualmente estamos a una temperatura de:</p>
+              <h2 id="lblActual">35C</h2>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3 mx-auto">
-        <div class="card">
+      <div class="row">
+        <div class="col-sm-3 mx-auto">
           <!--Tarjeta para la temperatura minima-->
-          <div class="card-body text-center">
-            <h5 class="card-title">Temperatura Minima</h5>
-            <p class="card-text">El dia de hoy se estima una minima de:</p>
-            <h2 id="lblMinima">10C</h2>
+          <div class="card text-white bg-info">
+            <div class="card-body text-center">
+              <h5 class="card-title">Temperatura Minima</h5>
+              <p class="card-text">El dia de hoy se estima una minima de:</p>
+              <h2 id="lblMinima">10C</h2>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-3 mx-auto">
-        <div class="card">
+        <div class="col-sm-3 mx-auto">
           <!--Tarjeta para la temperatura maxima-->
-          <div class="card-body text-center">
-            <h5 class="card-title">Temperatura Maxima</h5>
-            <p class="card-text">El dia de hoy se estima una maxima de:</p>
-            <h2 id="lblMaxima">50C</h2>
+          <div class="card text-white bg-danger">
+            <div class="card-body text-center">
+              <h5 class="card-title">Temperatura Maxima</h5>
+              <p class="card-text">El dia de hoy se estima una maxima de:</p>
+              <h2 id="lblMaxima">50C</h2>
+            </div>
           </div>
         </div>
       </div>

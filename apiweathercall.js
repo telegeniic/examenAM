@@ -11,12 +11,17 @@ function getApiData(ciudad) {
     if (this.readyState == 4 && this.status == 200) {
       var data = this.response;
       var myData = JSON.parse(data);
-      let values = {
-        actual: myData.main.temp,
-        max: myData.main.temp_max,
-        min: myData.main.temp_min,
-      };
-      showWeather(values);
+      var weather = getweather(myData);
+      showWeather(weather);
     }
   };
+}
+
+function getweather(data) {
+  let values = {
+    actual: data.main.temp,
+    max: data.main.temp_max,
+    min: data.main.temp_min,
+  };
+  return values;
 }
